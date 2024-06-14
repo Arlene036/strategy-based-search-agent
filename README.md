@@ -15,6 +15,7 @@ pip install -r requirements.txt
 
 ## Usage
 
+First, fill in all the API required, but only OpenAI API is necessary.
 Set up a FastAPI application that handles search queries using a search agent and rewrite agent, leveraging Langchain, Langserve, and various API keys for functionality.
 
 ```{bash}
@@ -34,12 +35,14 @@ python server_search_agent.py
 
 Then, use inference.py to get the results of queries in the dataset.
 ```{bash}
-python evaluation/inference.py
+cd evaluation
+python inference.py
 ```
 
 Finally, use checker.py to get the evaluation results.
 ```{bash}
-python evaluation/checker.py
+cd evaluation
+python checker.py
 ```
 
 Here are the results of our experiments:
