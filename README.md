@@ -41,3 +41,13 @@ Finally, use checker.py to get the evaluation results.
 ```{bash}
 python evaluation/checker.py
 ```
+
+Here are the results of our experiments:
+| Model                          | Avg Utility | Avg Reality |
+|--------------------------------|-------------|-------------|
+| Rewrite Agent                  | 3.991       | 1.428       |
+| LLM with Search Tool           | 3.304       | 0.940       |
+| Offline Model                  | 2.850       | 0.312       |
+| (Ours) Search Agent            | 4.364       | 1.648       |
+| (Ours) Search Agent without Strategy Hit | 3.929 | 1.357       |
+| (Ours) Search Agent with Strategy Hit    | **4.405** | **1.673** |
